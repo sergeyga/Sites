@@ -1,21 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-	<canvas height="608px" width="608px" id="game"></canvas>
-<script src="script.js"></script>
-</body>
-</html>
+<!-- <button onclick="alert('Бабах!');">НЕ ЖМИ</button>
+<button onclick="print('Бабах!')">НЕ ЖМИ</button>
+<h1 onclick="print('Бабах!')">НЕ ЖМИ</h1> -->
 
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
+<script>
+var colorArray = ["red", "#A8BF5A", "#FAC46E", "#FAD5BB", "#F2FEFF"]; // создаем массив с цветами фона
+var i = 0;
+
+function changeColor(){
+    document.body.style.background = colorArray[i];
+    i++;
+    if( i > colorArray.length - 1){
+        i = 0;
+    }
+}
+</script>
+<button onclick="changeColor();">Change background</button>
+
+<!--
+<pre style="background-color: rgb(238, 255, 204);border:solid 1px;height: 300px;">serojik</pre> -->
